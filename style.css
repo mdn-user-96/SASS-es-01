@@ -1,0 +1,31 @@
+.exercise {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+}
+
+.exercise .exercise-title {
+  color: green;
+  border-bottom: 1px solid blue;
+}
+
+.exercise section {
+  display: flex;
+}
+
+.exercise section article {
+  border: 1px solid green;
+  padding: 15px;
+}
+
+.exercise section article .p01,
+.exercise section article .p03 {
+  color: blue;
+}
+
+.exercise section article .p02,
+.exercise section article .p04 {
+  color: red;
+}

@@ -1,0 +1,36 @@
+$red01: red;
+$green02: green;
+$border1px: 1px;
+$blue03: blue;
+$padding: 15px;
+@mixin title () {
+    color: $green02;
+    border-bottom: 1px solid blue
+}
+
+;
+.exercise {
+    border: 1px solid $red01;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: $padding;
+    .exercise-title {
+        @include title;
+    }
+    section {
+        display: flex;
+        article {
+            border: 1px solid $green02;
+            padding: $padding;
+            .p01,
+            .p03 {
+                color: $blue03;
+            }
+            .p02,
+            .p04 {
+                color: $red01;
+            }
+        }
+    }
+}
